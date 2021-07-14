@@ -61,6 +61,7 @@ main{
 .top-players{
     margin: 50px;
     padding-right: 50px;
+    padding-left: 50px;
 }
 .cards{
     display: grid;
@@ -101,9 +102,17 @@ main{
 }
     /* form section style */
 form{
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 390px;
+    margin-right: 390px;
     margin-bottom: 50px;
+}
+form input{
+    width: 400px;
+    height: 30px;
+}
+form button{
+    width: 100px;
+    height: 30px;
 }
 
 /* footer section style */
@@ -153,6 +162,9 @@ form{
         align-items: flex-start;
     }
       /* for cards */
+    .top-players{
+        margin: 30px 5px 5px 5px;
+    }
     .cards{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -180,49 +192,18 @@ form{
         margin-right: 50px;
         margin-bottom: 0px; 
     }
+    form input{
+        width: 180px;
+        height: 30px;
+        }
+    form button{
+        width: 80px;
+        height: 30px;
+        }
     /* for footers */
     .footer{
         width: 250px;
         height: 250px;
         margin-left: 60px;
         }
-}
-/* tablet devices */
-@media only screen and (min-width:668px) and (max-width:992px){
-    /* title section */
-        .title{
-            flex-direction: row;
-            align-items: center;
-        }
-        .title img{
-        margin-left: 20px;
-        width: 350px;
-        height: 200px;
-        }
-        .title-details h2{
-        font-size: 32px;
-        align-items: flex-start;
-        }
-    /* for cards */
-    .cards{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .card img{
-        width: 200px;
-        height: 200px;
-    }
-    /* for forms */
-    form{
-        margin-left: 250px;
-        margin-right: 250px;
-        margin-bottom: 0px; 
-    }
-
-    /* for footers */
-    .footer{
-        width: 350px;
-        height: 350px;
-        margin-left: 180px;
-        }
-    
 }
