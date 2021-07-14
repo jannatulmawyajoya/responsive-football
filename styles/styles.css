@@ -92,6 +92,31 @@ main{
     height: 300px;
 }
 
+/* footer section style */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 483.87px;
+    height: 213px;
+    justify-content: center;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.icon-style{
+    display: inline;
+
+    text-align: center;
+
+}
+.fab{
+    font-size: 30px;
+    color: gray;
+}
+.icon-style p{
+    font-size: 15px;
+}
+
 
 
 
@@ -128,6 +153,13 @@ main{
         width: 200px;
         height: 200px;
     }
+
+    /* for footers */
+    .footer{
+        width: 250px;
+        height: 250px;
+        margin-left: 60px;
+        }
 }
 
 /* tablet devices */
@@ -158,6 +190,13 @@ main{
         width: 200px;
         height: 200px;
     }
+
+    /* for footers */
+    .footer{
+        width: 350px;
+        height: 350px;
+        margin-left: 180px;
+        }
     
 
 }
