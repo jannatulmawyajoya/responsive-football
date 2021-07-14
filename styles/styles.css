@@ -1,17 +1,17 @@
 /* Font details */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+    /* common styles or utilities */
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
-
 .container{
     width: 100%;
 }
@@ -22,12 +22,9 @@ main{
     align-items: center;
     background-color: #2D25A0;
     padding: 50px;
-   
-    
 }
 .title-details{
     color: white;
-    
 }
 .title-details h2{
     display: flex;
@@ -49,9 +46,7 @@ main{
     font-weight: 100;
     font-size: 12px;
     margin-right: 8px;
-
 }
-
 .title img{
     display: flex;
     direction: column;
@@ -62,12 +57,9 @@ main{
     transform: rotate(10deg);
     transition: transform 3s ease ;
 }
-
 /* cards style started */
 .top-players{
-   
     margin: 50px;
-    /* padding-left: 50px; */
     padding-right: 50px;
 }
 .cards{
@@ -75,10 +67,7 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
     grid-column-gap: 30px;
-    
-    
 }
-
 .card{
     display: flex;
     flex-direction: column;
@@ -90,9 +79,7 @@ main{
     width: 300px;
     height: 300px;
 }
-
 /* videos style  */
-
 .videos{
     margin: 0 50px 50px 50px;
 }
@@ -101,12 +88,10 @@ main{
     font-style: normal;
     margin-left: 20px;
 }
-
 .video{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .video p{
     font-size: 20px;
@@ -114,9 +99,14 @@ main{
     margin-left: 20px;
     color: blue;
 }
+    /* form section style */
+form{
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 50px;
+}
 
 /* footer section style */
-
 .footer{
     display: flex;
     flex-direction: column;
@@ -128,9 +118,7 @@ main{
 }
 .icon-style{
     display: inline;
-
     text-align: center;
-
 }
 .fab{
     font-size: 30px;
@@ -139,14 +127,8 @@ main{
 .icon-style p{
     font-size: 15px;
 }
-
-
-
-
 /* media query */
-
 /* mobile devices */
-
 @media only screen and (max-width:668px) {
      /* title section */
     .container{
@@ -155,16 +137,17 @@ main{
     .title{
         flex-direction: column;
         justify-content: center;
-        /* align-items: normal; */
-        
     }
-/* change korsi eikhane */
+
+
     .title img{
+        width: 250px;
+        height: 150px;
         margin-top: 30px;     
         width: 350px;
         height: 250px;
     }
-   
+
     .title-details h2{
         font-size: 32px;
         align-items: flex-start;
@@ -177,7 +160,6 @@ main{
         width: 200px;
         height: 200px;
     }
-
     /* for featured videos */
     .videos{
         margin: 10px;
@@ -192,7 +174,12 @@ main{
     .video p{
         font-size: 15px;
     }
-
+    /* for forms */
+    form{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 0px; 
+    }
     /* for footers */
     .footer{
         width: 250px;
@@ -200,16 +187,13 @@ main{
         margin-left: 60px;
         }
 }
-
 /* tablet devices */
 @media only screen and (min-width:668px) and (max-width:992px){
     /* title section */
-
         .title{
             flex-direction: row;
             align-items: center;
         }
-
         .title img{
         margin-left: 20px;
         width: 350px;
@@ -218,16 +202,20 @@ main{
         .title-details h2{
         font-size: 32px;
         align-items: flex-start;
-    }
-
+        }
     /* for cards */
     .cards{
         grid-template-columns: repeat(2, 1fr);
     }
     .card img{
-        
         width: 200px;
         height: 200px;
+    }
+    /* for forms */
+    form{
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-bottom: 0px; 
     }
 
     /* for footers */
@@ -237,5 +225,4 @@ main{
         margin-left: 180px;
         }
     
-
 }
