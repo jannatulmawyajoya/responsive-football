@@ -1,13 +1,16 @@
 /* Font details */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
+    /* font-family: 'Poppins', sans-serif; */
     font-family: 'Poppins', sans-serif;
 }
 
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    
 }
 
 .container{
@@ -61,6 +64,35 @@ main{
     transition: transform 3s ease ;
 }
 
+/* cards style started */
+.top-players{
+   
+    margin: 50px;
+    /* padding-left: 50px; */
+    padding-right: 50px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.card img{
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+
+
 
 
 /* media query */
@@ -68,6 +100,7 @@ main{
 /* mobile devices */
 
 @media only screen and (max-width:668px) {
+     /* title section */
     .container{
         width: 100%;
     }
@@ -87,17 +120,27 @@ main{
         font-size: 32px;
         align-items: flex-start;
     }
+      /* for cards */
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card img{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 /* tablet devices */
 @media only screen and (min-width:668px) and (max-width:992px){
+    /* title section */
+
         .title{
             flex-direction: row;
             align-items: center;
         }
 
         .title img{
-        margin-left: 40px;
+        margin-left: 20px;
         width: 350px;
         height: 200px;
         }
@@ -105,5 +148,16 @@ main{
         font-size: 32px;
         align-items: flex-start;
     }
+
+    /* for cards */
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card img{
+        
+        width: 200px;
+        height: 200px;
+    }
+    
 
 }
