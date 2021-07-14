@@ -1,8 +1,7 @@
 /* Font details */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
-    /* font-family: 'Poppins', sans-serif; */
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -92,6 +91,30 @@ main{
     height: 300px;
 }
 
+/* videos style  */
+
+.videos{
+    margin: 0 50px 50px 50px;
+}
+.videos span{
+    color: blue;
+    font-style: normal;
+    margin-left: 20px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+    color: blue;
+}
+
 /* footer section style */
 
 .footer{
@@ -152,6 +175,21 @@ main{
     .card img{
         width: 200px;
         height: 200px;
+    }
+
+    /* for featured videos */
+    .videos{
+        margin: 10px;
+    }
+    .video{
+        flex-direction: column;
+    }
+    .video iframe{
+        width: 350px;
+        height: 150px;
+    }
+    .video p{
+        font-size: 15px;
     }
 
     /* for footers */
